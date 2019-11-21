@@ -1,0 +1,151 @@
+
+.App {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  height: 760px;
+  width: 100vw;
+  margin: 0;
+}
+
+#edcpic {
+  object-fit: cover;
+}
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0px 15vw; */
+  /* border: 1px solid; */
+  position: absolute;
+  top: 0px;
+  height: 100px;
+  width: 1100px;
+  align-items: center;
+}
+#header2 {
+  display: none;
+}
+/* #second-header {
+  display: none;
+} */
+#bootstrap {
+  font-family: 'Kaushan Script', cursive;
+  color: #FED136;
+  font-size: 28px;
+}
+#menu {
+  display: none;
+  color: white;
+  background-color: #FED136;
+  border-radius: 3px;
+  border: transparent;
+  padding: 10px 15px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#links{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#welcome {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 40px;
+  margin: 0;
+  
+}
+#nice {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 75px; 
+
+}
+
+#tell-me-button{
+  background-color: #FED136;
+  border: transparent;
+  border-radius: 3px;
+  padding: 20px 40px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+@media (max-width: 1200px) {
+  .App-header {
+    width: 900px;
+  }
+}
+
+@media (max-width: 1000px){
+  #links {
+    display: none;
+  }
+  #bootstrap {
+    font-size: 20px;
+  }
+  .App {
+    height: 830px;
+  }
+  .App-header {
+    background-color: #212529;
+    width: 100vw;
+    height: 40px;
+    justify-content: space-around;
+  }
+  #menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  
+}
+@media (max-width: 768px){
+
+  .App {
+    height: 485px;
+  }
+  #welcome {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    border: 1px solid white;
+    margin: 0;
+    
+  }
+  #nice {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    border: 1px solid white;
+   
+  
+  }
+  .centered {
+    position: absolute;
+    /* top: 300px; */
+    top: 30%;
+  }
+  
+
+}
